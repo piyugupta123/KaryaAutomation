@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "GalleryList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Content/Pages/Gallery.js"></script>
+<link href="~/Content/assets/css/Card.css" rel="stylesheet" />
+
+<div class="breadcrumbs">
+    <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/page-header.jpg');">
+        <div class="container position-relative">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2>Gallery</h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="container">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                @*<a href="~/Views/Product/ProductList.cshtml">~/Views/Product/ProductList.cshtml</a>*@
+                <li>Gallery</li>
+            </ol>
+        </div>
+    </nav>
+</div><!-- End Breadcrumbs -->
+<br />
+<hr />
+
+
+<section id="service" class="services pt-0">
+    <div class="container" data-aos="fade-up">
+        <div class="row gy-4" id="tblGallery">
+
+
+        </div>
+
+    </div>
+</section>
+
+<div class="row" id="tblGallery">
+
+
+
+</div>

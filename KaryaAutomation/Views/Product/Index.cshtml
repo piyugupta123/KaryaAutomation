@@ -1,0 +1,133 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout - Admin.cshtml";
+}
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Content/Pages/Product1.js"></script>
+
+@*<h2>Index</h2>*@
+<br />
+<div class="col-md-12">
+    <!-- general form elements -->
+    <div class="card card-primary">
+        <div class="card-header">
+            <h3 class="card-title">Product</h3>
+        </div>
+        <!-- /.card-header -->
+        <!-- form start -->
+        <form>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="txtTitle">Title</label>
+                    @*<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">*@
+                    <input id="txtTitle" type="text" class="form-control" placeholder="Please Enter Title" />
+                </div>
+                <div class="form-group">
+                    <label for="file1">File</label>
+                    @*<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">*@
+                    <input id="file1" type="file" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="txtDescription">Description</label>
+                    @*<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">*@
+                    <input id="txtDescription" type="text" class="form-control" placeholder="Please Enter Description" />
+                </div>
+                <div class="form-group">
+                    <label for="txtPrice">Price</label>
+                    @*<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">*@
+                    <input id="txtPrice" type="text" class="form-control" placeholder="Please Enter Price" />
+                </div>
+
+
+            </div>
+            <!-- /.card-body -->
+
+            <div class="card-footer">
+                @*<button type="submit" class="btn btn-success">Submit</button>*@
+                <input id="Button1" type="button" class="btn btn-success" value="Submit" onclick="saveproduct()" />
+            </div>
+        </form>
+    </div>
+    <!-- /.card -->
+    <!-- general form elements -->
+    <!-- /.card -->
+    <!-- Input addon -->
+    <!-- /.card -->
+    <!-- Horizontal Form -->
+    <!-- /.card -->
+
+</div>
+
+
+
+
+
+<br />
+<br />
+<hr />
+
+
+
+<!--<div class="col-md-6">-->
+    <!-- general form elements -->
+    <!--<div class="card card-primary">
+        <div class="card-header">
+            <h3 class="card-title">Product List</h3>
+        </div>-->
+        <!-- /.card-header -->
+        <!-- form start -->
+        <!--<form>
+            <div class="card-body">
+                <table id="tblProduct" border="1">
+                    <thead>
+
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Image</th>
+                    <th>Description</th>
+                    <th>Price</th>
+
+
+                    </thead>
+
+                    <tbody></tbody>
+
+                </table>
+               
+                
+            </div>-->
+            <!-- /.card-body -->
+
+            
+        <!--</form>
+    </div>-->
+    <!-- /.card -->
+    <!-- general form elements -->
+    <!-- /.card -->
+    <!-- Input addon -->
+    <!-- /.card -->
+    <!-- Horizontal Form -->
+    <!-- /.card -->
+
+<!--</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

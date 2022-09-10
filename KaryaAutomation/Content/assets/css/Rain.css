@@ -1,0 +1,92 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), url(https://i.ibb.co/dffDZnk/rainbg.jpg);
+    background-size: 100% 100%;
+}
+
+    .main .rain {
+        height: 100vh;
+        background: url(https://i.ibb.co/sjP941w/rain-png-45862.png);
+        animation: rain .3s linear infinite;
+        -webkit-animation: rain .5s linear infinite;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .main .rain img {
+            position: absolute;
+            top: -121px;
+            left: -5vw;
+            width: 350px;
+            opacity: 1;
+            transform: rotate(-92deg);
+            -webkit-transform: rotate(-92deg);
+            -moz-transform: rotate(-92deg);
+            -ms-transform: rotate(-92deg);
+            -o-transform: rotate(-92deg);
+            animation: thunder 15s ease 3s infinite;
+            -webkit-animation: thunder 15s ease 3s infinite;
+        }
+
+        .main .rain .img2 {
+            position: absolute;
+            top: -121px;
+            left: 40vw;
+            width: 350px;
+            transform: rotate(-60deg);
+            -webkit-transform: rotate(-60deg);
+            -moz-transform: rotate(-60deg);
+            -ms-transform: rotate(-60deg);
+            -o-transform: rotate(-60deg);
+        }
+
+        .main .rain .img3 {
+            position: absolute;
+            top: -140px;
+            left: 80vw;
+            width: 350px;
+            transform: rotate(-60deg);
+            -webkit-transform: rotate(-60deg);
+            -moz-transform: rotate(-60deg);
+            -ms-transform: rotate(-60deg);
+            -o-transform: rotate(-60deg);
+        }
+
+@keyframes thunder {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes rain {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 20% 100%;
+    }
+}
